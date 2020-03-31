@@ -5,8 +5,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var mongo_ip = require('dns').lookup(require('os').hostname(), function (err, add, fam));
-console.log(mongo_ip);
+var mongo_ip = require('dns').lookup(require('os').hostname(), function (err, add, fam)
+     console.log(mongo_ip);                               
+);
 
 // New Code
 var monk = require('monk');
