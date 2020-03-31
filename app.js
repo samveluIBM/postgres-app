@@ -5,13 +5,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-require('dns').lookup(require('os').hostname(), function (err, add, fam) {
-  console.log('addr: '+add);
-})
+var mongo_ip = require('dns').lookup(require('os').hostname(), function (err, add, fam));
+console.log(mongo_ip);
 
 // New Code
 var monk = require('monk');
-var db = monk('localhost:27017/nodetest1');
+var db = monk(mongo_ip+':27017/nodetest1');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
