@@ -1,8 +1,8 @@
-FROM node:latest
+FROM nodejs-s390x:latest
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install
 COPY . /usr/src/app
-EXPOSE 3000
+EXPOSE 8080
 CMD ["npm", "start"]
