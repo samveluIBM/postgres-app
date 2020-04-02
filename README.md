@@ -2,5 +2,5 @@
 
 Lab 006: Using Persistent Storage
 
-A sample Node.js application for OpenShift of IBM Z for viewing data and adding data to MongoDB
+A Node.js application for OpenShift of IBM Z for viewing and adding to a MongoDB database of sample user data
 
