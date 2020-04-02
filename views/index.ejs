@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Hello World!</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Hello, world! Welcome to <%= title %></p>
+    <h1>Hello World!</h1>
+    <p>This is a containerized Node.js application on OpenShift Container Platform for IBM Z!</p>
+    <p>This app allows you to view and add to a sample database of user data, being stored in MongoDB.</p>
+    <p>If this is your first time using the app, start by adding a new user below!</p>
+    <form id="formNewUser" name="newuser" method="get" action="/newuser">
+      <button id="btnSubmit" type="submit">Add a New User!</button>
+    </form>
+    <p>If you've previously added users and want to view your userlist, click below</p>
+    <form id="formUserlist" name="Userlist" method="get" action="/Userlist">
+      <button id="btnSubmit" type="submit">View Userlist</button>
+    </form>
   </body>
 </html>
