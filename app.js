@@ -7,7 +7,7 @@ var logger = require('morgan');
 
 // New Code
 var monk = require('monk');
-var db = monk('mongodb/nodetest1');
+var db = monk('mongo/nodetest1');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
