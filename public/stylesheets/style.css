@@ -1,8 +1,73 @@
-body {
-  padding: 50px;
+html,body {
+  /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: -5px;
+  overflow: hidden;
 }
-
 a {
   color: #00B7FF;
+}
+.wrapper-sidebar{
+  min-height: 100%;
+  width: 50px;
+  background-color: #051243;
+  float: left;
+}
+.wrapper-content {
+  top: 0;
+  margin-left: 50px;
+  height: 100%;
+  width: 100%;
+}
+.content-title {
+  padding: 20px;
+  height: 15%;
+  width: 100%;
+  color: #051243;
+}
+.content-body {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: #dcdcdc;
+}
+.wrapper-form {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.form-newuser {
+  width: 275px;
+  height: 100px;
+  float: left;
+  background-color: #bebebe;
+  padding: 15px;
+  text-align: center;
+}
+.form-userlist {
+  width: 275px;
+  height: 100px;
+  float: left;
+  margin-left: 25px;
+  background-color: #bebebe;
+  padding: 15px;
+  text-align: center;
+}
+#btnSubmit {
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color:#f9f9f9;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#051243;
+  font-family:Arial;
+  font-size:12px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
 }
