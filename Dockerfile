@@ -1,4 +1,4 @@
-FROM quay.io/mmondics/node:erbium-alpine
+FROM quay.io/mmondics/node:latest
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
