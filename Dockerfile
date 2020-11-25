@@ -1,4 +1,4 @@
-FROM node:12.18.3-buster
+FROM node:latest
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
