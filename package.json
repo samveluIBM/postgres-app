@@ -4,7 +4,8 @@
   "description": "api testing",
   "main": "apitest.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node apitest.js"
   },
   "keywords": [],
   "author": "Sam Amsavelu",
