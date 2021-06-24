@@ -1,4 +1,4 @@
-FROM quay.io/samveluIBM/node:latest
+FROM docker.io/node:latest
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
